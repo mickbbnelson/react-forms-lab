@@ -24,9 +24,9 @@ class LoginForm extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    //Figure out the correct way to implement Boolean for this
+    if (this.state.password != "" && this.state.username != "") {
     this.props.handleLogin(this.state) 
-  }
+  }}
 
   render() {
     return (
